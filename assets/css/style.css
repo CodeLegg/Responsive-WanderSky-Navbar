@@ -1,102 +1,123 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Futura PT Heavy";
-  }
-  
-  /* Color-root */
-  :root {
-    --white: #ffffff;
-    --dark-orange: #db380f;
-    --light-orange: #fd5e37;
-    --peach-color: #f8735d;
-    --light-peach-color: #f77f6f;
-    --grey-color: #3c3c3b;
-    --yellow-color: #fcc75d;
-    --orange-color-1: #fd5e37;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Futura PT Heavy";
+}
 
-  /* Hide Desktop Navigation */
-  .desktop-nav {
-    display: none;
-  }
+/* Color-root */
+:root {
+  --white: #ffffff;
+  --dark-orange: #db380f;
+  --light-orange: #fd5e37;
+  --peach-color: #f8735d;
+  --light-peach-color: #f77f6f;
+  --grey-color: #3c3c3b;
+  --yellow-color: #fcc75d;
+  --orange-color-1: #fd5e37;
+}
 
-  /* Website Background */
-  body {
-    background-color: #c7c7c7;
-  }
+/* Hide Desktop Navigation */
+.desktop-nav {
+  display: none;
+}
 
-  /* Mobile Navigation Banner */
-  .mobile-nav {
-    padding: 10px;
-    background-color: var(--white);
-  }
+/* Website Background */
+body {
+  background-color: #c7c7c7;
+}
 
-  /* Mobile Hamburger */
+/* Mobile Navigation Banner */
+.mobile-nav {
+  padding: 10px;
+  background-color: var(--white);
+}
+
+/* Mobile Hamburger */
 .mobile-toggle-btn {
-    display: flex;
-    flex-direction: column;
-    margin-left: 19px;
-  }
-  .bar {
-    height: 4px;
-    width: 30px;
-    background-color: var(--grey-color);
-    margin: 3px 0;
-    transition: 0.4s;
-    cursor: pointer;
-  }
-  
-  .cross .bar:nth-child(1) {
-    transform: rotate(-45deg) translate(-9px, 5px);
-  }
-  
-  .cross .bar:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .cross .bar:nth-child(3) {
-    transform: rotate(45deg) translate(-9px, -5px);
-  }
+  display: flex;
+  flex-direction: column;
+  margin-left: 19px;
+}
+.bar {
+  height: 4px;
+  width: 30px;
+  background-color: var(--grey-color);
+  margin: 3px 0;
+  transition: 0.4s;
+  cursor: pointer;
+}
 
-  /* Mobile-Logo */
-  .mob-logo {
-    width: 131px;
-  }
+.cross .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-9px, 5px);
+}
 
-  /* Mobile Letter Icon */
-  .fa-envelope {
-    color: var(--grey-color);
-    font-size: 2rem;
-  }
+.cross .bar:nth-child(2) {
+  opacity: 0;
+}
 
-    /* Mobile Navigation Flex */
-  .mobile-nav-brand {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .mobile-nav-brand > div:nth-child(1) {
-    flex-basis: 50px;
-  }
-  
-  .mobile-nav-brand > div:nth-child(3) {
-    flex-basis: 50px;
-  }
-  
-  /* Mobile Navigation Dropdown */
-  .mobile-nav-dropdown {
-    display: none;
-    position: absolute;
-    top: 99.45px;
-    left: 0;
-    width: 100%;
-    background-color: var(--light-orange);
-    height: 100vh;
-  }
+.cross .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-9px, -5px);
+}
 
-  /* Mobile Navigation JavaScript Class */
-  .mobile-nav-dropdown.show {
-    display: block;
-  }
+/* Mobile-Logo */
+.mob-logo {
+  width: 131px;
+}
+
+/* Mobile Letter Icon */
+.fa-envelope {
+  color: var(--grey-color);
+  font-size: 2rem;
+}
+
+/* Mobile Navigation Flex */
+.mobile-nav-brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-nav-brand > div:nth-child(1) {
+  flex-basis: 50px;
+}
+
+.mobile-nav-brand > div:nth-child(3) {
+  flex-basis: 50px;
+}
+
+/* Mobile Navigation Dropdown */
+.mobile-nav-dropdown {
+  display: none;
+  position: absolute;
+  top: 99.45px;
+  left: 0;
+  width: 100%;
+  background-color: var(--light-orange);
+  height: 100vh;
+}
+
+/* Mobile Navigation JavaScript Class */
+.mobile-nav-dropdown.show {
+  display: block;
+}
+
+/* Mobile Navigation Dropdown List */
+.mobile-nav-dropdown li {
+  display: flex;
+  align-items: center;
+  padding: 20px 10px 20px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Mobile Dropdown Left Icons Spacing */
+.mobile-container-inner-nav li i:first-child {
+  flex-basis: 20px;
+  margin-right: 0.5em;
+}
+
+/* Mobile Dropdown Anchor Text */
+.mobile-nav-dropdown a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
