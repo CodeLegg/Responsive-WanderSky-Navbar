@@ -121,3 +121,8 @@ body {
   text-decoration: none;
   text-align: center;
 }
+
+/* Mobile Dropdown All Icons Color */
+.mobile-nav-dropdown i {
+  color: #fff;
+}
