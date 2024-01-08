@@ -16,3 +16,87 @@
     --yellow-color: #fcc75d;
     --orange-color-1: #fd5e37;
   }
+
+  /* Hide Desktop Navigation */
+  .desktop-nav {
+    display: none;
+  }
+
+  /* Website Background */
+  body {
+    background-color: #c7c7c7;
+  }
+
+  /* Mobile Navigation Banner */
+  .mobile-nav {
+    padding: 10px;
+    background-color: var(--white);
+  }
+
+  /* Mobile Hamburger */
+.mobile-toggle-btn {
+    display: flex;
+    flex-direction: column;
+    margin-left: 19px;
+  }
+  .bar {
+    height: 4px;
+    width: 30px;
+    background-color: var(--grey-color);
+    margin: 3px 0;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  
+  .cross .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-9px, 5px);
+  }
+  
+  .cross .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .cross .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-9px, -5px);
+  }
+
+  /* Mobile-Logo */
+  .mob-logo {
+    width: 131px;
+  }
+
+  /* Mobile Letter Icon */
+  .fa-envelope {
+    color: var(--grey-color);
+    font-size: 2rem;
+  }
+
+    /* Mobile Navigation Flex */
+  .mobile-nav-brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mobile-nav-brand > div:nth-child(1) {
+    flex-basis: 50px;
+  }
+  
+  .mobile-nav-brand > div:nth-child(3) {
+    flex-basis: 50px;
+  }
+  
+  /* Mobile Navigation Dropdown */
+  .mobile-nav-dropdown {
+    display: none;
+    position: absolute;
+    top: 99.45px;
+    left: 0;
+    width: 100%;
+    background-color: var(--light-orange);
+    height: 100vh;
+  }
+
+  /* Mobile Navigation JavaScript Class */
+  .mobile-nav-dropdown.show {
+    display: block;
+  }
