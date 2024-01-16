@@ -136,6 +136,16 @@ body {
     display: none;
   }
 
+  /* Fontawesome-icon-color-&-t-dec */
+  a {
+    text-decoration: none;
+    color: var(--dark-orange);
+  }
+
+  /* Fontawesome-icon-font-size */
+  i {
+    font-size: 1.6em;
+  }
 
 
 }
