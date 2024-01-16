@@ -126,3 +126,16 @@ body {
 .mobile-nav-dropdown i {
   color: #fff;
 }
+
+
+@media screen and (min-width: 768px) {
+  .desktop-nav {
+    display: block;
+  }
+  .mobile-nav {
+    display: none;
+  }
+
+
+
+}
