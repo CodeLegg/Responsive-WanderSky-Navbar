@@ -135,7 +135,7 @@ body {
     display: none;
   }
 
-/*-----------------------------------*\
+  /*-----------------------------------*\
   #STYLES
 \*-----------------------------------*/
 
@@ -184,7 +184,7 @@ body {
     padding-right: 10px;
   }
 
-  /* Flex-Container-padding-&-width */
+  /* Flex-Container */
   .container-inner {
     display: flex;
     justify-content: space-between;
@@ -218,6 +218,7 @@ body {
     align-items: center;
   }
 
+  /* Top navigation icons */
   .fa-heart,
   .fa-user {
     font-size: 1.2rem;
@@ -225,7 +226,6 @@ body {
   /* fav-heart-flex-item */
   .fav-heart {
     flex-basis: 120px;
-    /* height: 50px; */
     margin: 10px;
     display: flex;
     justify-content: center;
@@ -265,7 +265,6 @@ body {
   /* user-signin-flex-item */
   .user-signin {
     flex-basis: 120px;
-    /* height: 50px; */
     margin: 10px;
     display: flex;
     align-items: center;
@@ -301,25 +300,30 @@ body {
   /*-----------------------------------*\
     #BOTTOM NAVIGATION STYLES START
   \*-----------------------------------*/
+  /* Bottom navigation icons */
   ul li i {
     font-size: 0.9em;
     color: var(--white);
   }
 
+  /* Bottom navigation text */
   ul li a {
     font-size: 0.9em;
     color: var(--white);
   }
 
+  /* Bottom navigation spacing */
   .container-inner-nav li {
     padding-right: 10px;
     margin-left: auto;
   }
 
+  /* Botttom navigation colour */
   .bottom-nav {
     background: var(--light-orange);
   }
 
+  /* Bottom navigation flex */
   .container-inner-nav {
     list-style: none;
     display: flex;
@@ -328,11 +332,14 @@ body {
     flex-shrink: 0;
   }
 
+  /* Search box flex */
   .search-box {
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
   }
+
+  /* Search box Buttons */
   .search-box button {
     height: 50px;
     width: 50px;
@@ -341,10 +348,13 @@ body {
     background: var(--peach-color);
     cursor: pointer;
   }
+
+  /* Search box Buttons Hover */
   .search-box button:hover {
     background-color: var(--light-peach-color);
   }
 
+  /* Search box Input */
   .search-box input {
     flex-basis: 100%;
     color: var(--white);
@@ -357,20 +367,22 @@ body {
     font-size: 1.1em;
   }
 
+  /* Search box Input Placeholder */
   .search-box input::placeholder {
     color: var(--white);
     opacity: 0.8;
     font-size: 0.98rem;
   }
 
+  /* Search box flex order */
   .search-box > :nth-child(1) {
     order: 2;
   }
-
+  /* Search box flex order */
   .search-box > :nth-child(2) {
     order: 3;
   }
-
+  /* Search box flex order */
   .search-box > :nth-child(3) {
     order: 1;
   }
